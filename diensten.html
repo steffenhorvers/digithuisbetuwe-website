@@ -14,16 +14,29 @@
     .small-logo { max-width: 220px; height: auto; margin: 0 auto 0.5rem; display: block; }
     h1 { font-size: 2.8rem; color: #0d6efd; margin: 0.3rem 0; }
     h2 { font-size: 1.8rem; color: #333; margin: 0.3rem 0 1rem; }
-    .buttons { display: flex; flex-wrap: wrap; justify-content: center; gap: 1.5rem; margin: 1rem 0; }
-    .btn { display: inline-block; color: white; padding: 1rem 2.5rem; border-radius: 50px; text-decoration: none; font-weight: bold; font-size: 1.2rem; box-shadow: 0 4px 10px rgba(0,0,0,0.15); transition: all 0.3s; }
-    .btn-whatsapp { background: #25D366; }
-    .btn-whatsapp:hover { background: #20b858; transform: translateY(-2px); }
-    .btn-call { background: #0d6efd; }
-    .btn-call:hover { background: #0b5ed7; transform: translateY(-2px); }
-    form { max-width: 500px; margin: 1.5rem auto; text-align: left; }
-    label { display: block; margin: 0.8rem 0 0.3rem; font-weight: bold; }
-    input, textarea { width: 100%; padding: 0.9rem; margin-bottom: 0.8rem; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box; font-size: 1rem; }
-    button { background: #0d6efd; color: white; padding: 1rem; border: none; border-radius: 4px; cursor: pointer; font-size: 1.1rem; width: 100%; }
+    ul.services { 
+      list-style: none; 
+      padding: 0; 
+      max-width: 800px; 
+      margin: 1rem auto; 
+      text-align: left; 
+    }
+    ul.services li { 
+      margin: 0.8rem 0; 
+      padding-left: 3.5rem; 
+      position: relative; 
+    }
+    ul.services li:before { 
+      content: "•"; 
+      color: #0d6efd; 
+      position: absolute; 
+      left: 1rem; 
+      font-size: 2rem; 
+      line-height: 1; 
+      top: 0.1rem; 
+    }
+    .cta { margin: 1.5rem 0; font-size: 1.3rem; }
+    .cta a { color: #0d6efd; font-weight: bold; text-decoration: none; }
     footer { background: #e9ecef; padding: 2rem; font-size: 0.95rem; margin-top: 3rem; }
   </style>
 </head>
@@ -43,21 +56,21 @@
   <img src="logobijgesneden50procentkleiner.png" alt="DigiThuis Betuwe" class="small-logo">
   <h1>Diensten</h1>
   <h2>Rustige hulp bij jou thuis voor:</h2>
-  <ul style="list-style: none; padding: 0; max-width: 800px; margin: 0 auto; text-align: left;">
-    <li style="margin: 0.8rem 0; padding-left: 3rem; position: relative;">Printer aansluiten & laten werken</li>
-    <li style="margin: 0.8rem 0; padding-left: 3rem; position: relative;">Telefoon/tablet koppelen en instellen</li>
-    <li style="margin: 0.8rem 0; padding-left: 3rem; position: relative;">Nieuwe laptop/PC gebruiksklaar maken</li>
-    <li style="margin: 0.8rem 0; padding-left: 3rem; position: relative;">Foto’s, apps en bestanden veilig overzetten</li>
-    <li style="margin: 0.8rem 0; padding-left: 3rem; position: relative;">DigiD, bankapps, e-mail fixen</li>
-    <li style="margin: 0.8rem 0; padding-left: 3rem; position: relative;">Computer opruimen en sneller maken</li>
-    <li style="margin: 0.8rem 0; padding-left: 3rem; position: relative;">Foto’s/bestanden terughalen (data-recovery)</li>
-    <li style="margin: 0.8rem 0; padding-left: 3rem; position: relative;">Tv, geluid & Chromecast aansluiten (ook in caravan)</li>
-    <li style="margin: 0.8rem 0; padding-left: 3rem; position: relative;">Camerasysteem instellen</li>
-    <li style="margin: 0.8rem 0; padding-left: 3rem; position: relative;">Office uitleg: Word, Excel, PowerPoint</li>
+  <ul class="services">
+    <li>Printer aansluiten & laten werken</li>
+    <li>Telefoon/tablet koppelen en instellen</li>
+    <li>Nieuwe laptop/PC gebruiksklaar maken</li>
+    <li>Foto’s, apps en bestanden veilig overzetten</li>
+    <li>DigiD, bankapps, e-mail fixen</li>
+    <li>Computer opruimen en sneller maken</li>
+    <li>Foto’s/bestanden terughalen (data-recovery)</li>
+    <li>Tv, geluid & Chromecast aansluiten (ook in caravan)</li>
+    <li>Camerasysteem instellen</li>
+    <li>Office uitleg: Word, Excel, PowerPoint</li>
   </ul>
 
-  <div class="cta" style="margin: 1.5rem 0; font-size: 1.3rem;">
-    Interesse? <a href="contact.html" style="color: #0d6efd; font-weight: bold; text-decoration: none;">Neem contact op</a> of bel Steffen: +31 6 44706404
+  <div class="cta">
+    Interesse? <a href="contact.html">Neem contact op</a> of bel Steffen: +31 6 44706404
   </div>
 </header>
 
