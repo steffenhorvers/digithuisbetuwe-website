@@ -5,20 +5,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>DigiThuis Betuwe - Computerhulp aan huis</title>
   <style>
-    body { font-family: Arial, sans-serif; margin: 0; background: #f8f9fa; color: #333; line-height: 1.6; text-align: center; }
+    body { font-family: Arial, sans-serif; margin: 0; background: #f8f9fa; color: #333; line-height: 1.7; text-align: center; font-size: 1.15rem; }
     nav { background: #0d6efd; color: white; position: fixed; width: 100%; top: 0; z-index: 1000; box-shadow: 0 2px 10px rgba(0,0,0,0.15); }
     nav ul { list-style: none; margin: 0; padding: 1rem; display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap; }
-    nav a { color: white; text-decoration: none; font-weight: bold; font-size: 1.1rem; }
+    nav a { color: white; text-decoration: none; font-weight: bold; font-size: clamp(1rem, 4vw, 1.1rem); }
     nav a:hover { text-decoration: underline; }
-    header { background: #f8f9fa; padding: 9rem 1rem 4rem; }
-    .logo { max-width: 100%; height: auto; margin-bottom: 1.5rem; }
+    header { background: #f8f9fa; padding: 10rem 1rem 4rem; }
+    .logo { max-width: 90%; height: auto; margin: 0 auto 2rem; display: block; }
     h1 { font-size: 2.8rem; color: #0d6efd; margin: 0.5rem 0; }
-    h2 { font-size: 1.6rem; color: #333; margin: 0.5rem 0 2rem; }
+    h2 { font-size: 1.8rem; color: #333; margin: 1rem 0 2rem; }
     .contact-info { margin: 2rem 0; font-size: 1.3rem; }
     .contact-info a { color: #0d6efd; text-decoration: none; font-weight: bold; }
-    .whatsapp-btn { display: inline-block; background: #25D366; color: white; padding: 1rem 2.5rem; border-radius: 50px; text-decoration: none; font-weight: bold; font-size: 1.2rem; margin: 1.5rem 0; box-shadow: 0 4px 10px rgba(0,0,0,0.15); }
+    .whatsapp-btn { display: inline-block; background: #25D366; color: white; padding: 1rem 2.5rem; border-radius: 50px; text-decoration: none; font-weight: bold; font-size: 1.2rem; margin: 2rem 0; box-shadow: 0 4px 10px rgba(0,0,0,0.15); transition: all 0.3s; }
     .whatsapp-btn:hover { background: #20b858; transform: translateY(-2px); }
-    footer { background: #e9ecef; padding: 2rem; font-size: 0.95rem; margin-top: 4rem; }
+    footer { background: #e9ecef; padding: 2rem; font-size: 1rem; margin-top: 4rem; }
   </style>
 </head>
 <body>
@@ -34,24 +34,24 @@
 </nav>
 
 <header>
-  <img src="logo.png" alt="DigiThuis Betuwe Logo" class="logo">
+  <img src="logobijgesneden.png" alt="DigiThuis Betuwe Logo" class="logo">
 
   <h1>DigiThuis Betuwe</h1>
   <h2>Computerhulp aan huis</h2>
 
   <div class="contact-info">
-    <p>Bel of app gerust: <a href="tel:+31644706404">Steffen Horvers – +31 6 44 70 64 04</a></p>
+    <p>Bel of app gerust: <a href="tel:+31644706404">Steffen Horvers – +31 6 44706404</a></p>
     <p>Zoete Kroon 6, Geldermalsen</p>
   </div>
 
-  <a href="https://wa.me/31644706404?text=Hoi%20Steffen%2C%20ik%20heb%20hulp%20nodig%20met%20mijn%20computer..." 
-     class="whatsapp-btn" target="_blank">
+  <a href="https://wa.me/31644706404?text=Hoi%20Steffen%2C%20ik%20heb%20hulp%20nodig%20met%20mijn%20computer..." class="whatsapp-btn" target="_blank">
     Stuur mij een WhatsApp-bericht
   </a>
 </header>
 
 <footer>
   <p>© 2026 DigiThuis Betuwe – Rustige hulp bij jou thuis in de Betuwe</p>
+  <p>Steffen Horvers – +31 6 44706404</p>
 </footer>
 
 </body>
