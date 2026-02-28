@@ -14,6 +14,19 @@
     .small-logo { max-width: 220px; height: auto; margin: 0 auto 0.5rem; display: block; }
     h1 { font-size: 2.8rem; color: #0d6efd; margin: 0.3rem 0; }
     h2 { font-size: 1.8rem; color: #333; margin: 0.3rem 0 1rem; }
+    .intro-text, .procedure, .contact-info {
+      max-width: 800px;
+      margin: 1rem auto;
+      text-align: left;
+      font-size: 1.15rem;
+    }
+    .procedure ol {
+      padding-left: 2rem;
+      margin: 1rem 0;
+    }
+    .contact-info p {
+      margin: 0.5rem 0;
+    }
     iframe { width: 100%; max-width: 900px; height: 500px; border: none; border-radius: 8px; margin: 1rem auto; display: block; }
     .cta { margin: 1.5rem 0; font-size: 1.3rem; }
     .cta a { color: #0d6efd; font-weight: bold; text-decoration: none; }
@@ -35,9 +48,33 @@
 <header>
   <img src="Testonderkantbijgesneden50kleiner.png" alt="DigiThuis Betuwe" class="small-logo">
   <h1>Planning & beschikbaarheid</h1>
+
+  <!-- Toegevoegd: procedure-tekst onder h1, dezelfde uitlijning als index/diensten -->
+  <div class="procedure">
+    <p><strong>Planning: Hoe gaan we te werk?</strong></p>
+    <p>Geen haastwerk of ingewikkelde procedures. Ik werk volgens een vaste, rustige methode zodat u precies weet wat u kunt verwachten:</p>
+    <ol>
+      <li><strong>Vrijblijvend contact:</strong> U belt, appt of mailt mij met uw vraag. We bespreken kort wat het probleem is en of ik u kan helpen.</li>
+      <li><strong>Afspraak maken:</strong> We plannen een moment in dat u goed uitkomt. Ik kom gewoon bij u aan huis in de Betuwe.</li>
+      <li><strong>Hulp op maat:</strong> Ik ga aan de slag terwijl u meekijkt. Ik leg alles uit in begrijpelijke taal en we nemen de tijd die nodig is.</li>
+      <li><strong>Samen controleren:</strong> We ronden pas af als u tevreden bent en alles weer naar behoren werkt.</li>
+    </ol>
+    <p>Wanneer ben ik beschikbaar? Ik ben flexibel inzetbaar. Meestal kunnen we binnen enkele dagen al een afspraak inplannen. Voornamelijk in de avonduren of op zaterdag is in overleg mogelijk.</p>
+  </div>
+
   <p>Bekijk hier wanneer ik beschikbaar ben.</p>
 
   <iframe src="https://calendar.google.com/calendar/embed?src=jouw-email@gmail.com&ctz=Europe%2FAmsterdam" style="border: 0" frameborder="0" scrolling="no"></iframe>
+
+  <!-- Toegevoegd: contact-tekst onder iframe, boven CTA, dezelfde uitlijning -->
+  <div class="contact-info">
+    <p><strong>Contact: Ik help u graag verder</strong></p>
+    <p>Heeft u een vraag over uw computer, telefoon of een ander apparaat? Schroom niet om contact op te nemen. Geen vraag is te gek of te klein.</p>
+    <p><strong>Steffen | Uw computerhulp aan huis</strong></p>
+    <p>📞 Bellen of appen: +31 6 44706404<br>(Spreek gerust de voicemail in als ik niet opneem, dan bel ik u zo snel mogelijk terug.)</p>
+    <p>✉️ E-mail: DigiThuisbetuwe@gmail.com</p>
+    <p>📍 Werkgebied: Ik kom bij u langs in de gehele regio Betuwe, waaronder: Geldermalsen, Buren, Tiel, Culemborg, Beesd, Waardenburg en omstreken.</p>
+  </div>
 
   <div class="cta">
     Geen geschikt moment? <a href="contact.html">Neem contact op</a> of bel Steffen: +31 6 44706404
@@ -51,8 +88,3 @@
 
 </body>
 </html>
-
-
-
-
-
