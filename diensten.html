@@ -14,29 +14,35 @@
     .small-logo { max-width: 220px; height: auto; margin: 0 auto 0.5rem; display: block; }
     h1 { font-size: 2.8rem; color: #0d6efd; margin: 0.3rem 0; }
     h2 { font-size: 1.8rem; color: #333; margin: 0.3rem 0 1rem; }
-    ul.services { 
-      list-style: none; 
-      padding: 0; 
-      max-width: 800px; 
-      margin: 1rem auto; 
-      text-align: left; 
+    ul.services {
+      list-style: none;
+      padding: 0;
+      max-width: 800px;
+      margin: 1rem auto;
+      text-align: left;
     }
-    ul.services li { 
-      margin: 0.8rem 0; 
-      padding-left: 3.5rem; 
-      position: relative; 
+    ul.services li {
+      margin: 0.8rem 0;
+      padding-left: 3.5rem;
+      position: relative;
     }
-    ul.services li:before { 
-      content: "•"; 
-      color: #0d6efd; 
-      position: absolute; 
-      left: 1rem; 
-      font-size: 2rem; 
-      line-height: 1; 
-      top: 0.1rem; 
+    ul.services li:before {
+      content: "•";
+      color: #0d6efd;
+      position: absolute;
+      left: 1rem;
+      font-size: 2rem;
+      line-height: 1;
+      top: 0.1rem;
     }
     .cta { margin: 1.5rem 0; font-size: 1.3rem; }
     .cta a { color: #0d6efd; font-weight: bold; text-decoration: none; }
+    .bottom-text {
+      max-width: 800px;
+      margin: 1.5rem auto 2rem;
+      text-align: left;
+      font-size: 1.15rem;
+    }
     footer { background: #e9ecef; padding: 2rem; font-size: 0.95rem; margin-top: 3rem; }
   </style>
 </head>
@@ -55,22 +61,33 @@
 <header>
   <img src="Testonderkantbijgesneden50kleiner.png" alt="DigiThuis Betuwe" class="small-logo">
   <h1>Diensten</h1>
-  <h2>Hulp op maat bij u thuis voor:</h2>
+  <h2>Onze diensten: Hulp op maat bij u thuis</h2>
+  <div class="intro">
+    <p>Loopt u ergens tegenaan of wilt u dat alles gewoon weer goed werkt? Ik help u graag bij de volgende zaken:</p>
+  </div>
+
   <ul class="services">
-    <li>Printer aansluiten & laten werken</li>
-    <li>Telefoon/tablet koppelen en instellen</li>
-    <li>Nieuwe laptop/PC gebruiksklaar maken</li>
-    <li>Foto’s, apps en bestanden veilig overzetten</li>
-    <li>DigiD, bankapps, e-mail instellen</li>
-    <li>Computer opruimen en sneller maken</li>
-    <li>Foto’s/bestanden terughalen (data-recovery)</li>
-    <li>Tv, geluid & Chromecast aansluiten (ook in caravan)</li>
-    <li>Camerasysteem instellen</li>
-    <li>Office uitleg: Word, Excel, PowerPoint</li>
+    <li><strong>Printer & Randapparatuur:</strong> Uw printer aansluiten, instellen en zorgen dat u weer probleemloos kunt printen en scannen.</li>
+    <li><strong>Telefoon & Tablet:</strong> Uw smartphone of iPad volledig instellen, accounts koppelen en uitleggen hoe alles werkt.</li>
+    <li><strong>Nieuwe Computer of Laptop:</strong> Nieuwe laptop of PC helemaal gebruiksklaar maken, inclusief het overzetten van al uw oude bestanden.</li>
+    <li><strong>Veilig Overzetten:</strong> Uw dierbare foto’s, apps en belangrijke documenten veilig verplaatsen naar een nieuw apparaat.</li>
+    <li><strong>Belangrijke Apps:</strong> Hulp bij het instellen van en inloggen bij DigiD, uw bank-app, e-mail en andere dagelijkse programma’s.</li>
+    <li><strong>Opschonen & Versnellen:</strong> Een trage computer weer vlot maken door hem grondig op te ruimen en te controleren.</li>
+    <li><strong>Bestanden Terughalen:</strong> Hulp bij het terugzoeken van per ongeluk verwijderde foto’s of verloren documenten (data-recovery).</li>
+    <li><strong>Beeld & Geluid:</strong> Uw televisie, geluidssysteem of Chromecast aansluiten en instellen (ook in uw caravan).</li>
+    <li><strong>Camerasysteem:</strong> Uw beveiligingscamera's installeren en eenvoudig uitleggen hoe u de beelden bekijkt.</li>
+    <li><strong>Uitleg Programma’s:</strong> Rustige ondersteuning bij het gebruik van Word, Excel of PowerPoint.</li>
   </ul>
 
+  <!-- Tekst nu precies onder de lijst en boven de CTA -->
+  <div class="bottom-text">
+    <strong>Heeft u een andere vraag?</strong><br>
+    Staat uw probleem er niet bij? Geen zorgen, grote kans dat ik u toch kan helpen.<br>
+    Neem gerust contact op voor de mogelijkheden.
+  </div>
+
   <div class="cta">
-    Interesse? <a href="contact.html">Neem contact op</a> of bel Steffen: +31 6 44706404
+    <a href="contact.html">Neem contact op</a> of bel Steffen: +31 6 44706404
   </div>
 </header>
 
@@ -81,8 +98,3 @@
 
 </body>
 </html>
-
-
-
-
-
