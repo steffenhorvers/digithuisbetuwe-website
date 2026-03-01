@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Over mij - DigiThuis Betuwe</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; background: #f8f9fa; color: #333; line-height: 1.7; font-size: 1.15rem; }
+    nav { background: #0d6efd; color: white; position: fixed; width: 100%; top: 0; z-index: 1000; box-shadow: 0 2px 10px rgba(0,0,0,0.15); }
+    nav ul { list-style: none; margin: 0; padding: 0.8rem; display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap; }
+    nav a { color: white; text-decoration: none; font-weight: bold; font-size: clamp(1rem, 4vw, 1.1rem); }
+    nav a:hover { text-decoration: underline; }
+    header { background: #f8f9fa; padding: 5rem 1rem 2.5rem; text-align: center; }
+    .small-logo { max-width: 220px; height: auto; margin: 0 auto 0.5rem; display: block; }
+    h1 { font-size: 2.8rem; color: #0d6efd; margin: 0.3rem 0; }
+    h2 { font-size: 1.8rem; color: #333; margin: 0.3rem 0 0.5rem; }
+    h3 { font-size: 1.5rem; margin: 2rem 0 1rem; }
+    .content {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+      overflow: hidden;
+      text-align: left;
+    }
+    .profile-photo {
+      float: left;
+      max-width: 320px;
+      height: auto;
+      border-radius: 8px;
+      margin: -0.2rem 2rem 1.5rem 0; /* kleine negatieve marge voor exacte bovenkant */
+      box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+      vertical-align: top;
+    }
+    .text-block {
+      margin-left: 340px; /* vaste ruimte voor foto */
+      text-align: left; /* links uitgelijnd */
+    }
+    .text-block p {
+      margin-top: 1rem; /* consistente marge tussen paragrafen */
+    }
+    .text-block p:first-child {
+      margin-top: 0; /* eerste regel exact op hoogte foto */
+    }
+    .cta { margin: 3rem 0 2rem; font-size: 1.3rem; text-align: center; }
+    .cta a { color: #0d6efd; font-weight: bold; text-decoration: none; }
+    footer { background: #e9ecef; padding: 2rem; font-size: 0.95rem; margin-top: 3rem; text-align: center; }
+
+    @media (max-width: 768px) {
+      .profile-photo {
+        float: none;
+        display: block;
+        margin: 0 auto 2rem;
+        max-width: 280px;
+      }
+      .text-block {
+        margin-left: 0;
+      }
+      .content { padding: 0 1.5rem; }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="diensten.html">Diensten</a></li>
+    <li><a href="tarieven.html">Tarieven</a></li>
+    <li><a href="planning.html">Planning</a></li>
+    <li><a href="over-mij.html">Over mij</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+<header>
+  <img src="Testonderkantbijgesneden50kleiner.png" alt="DigiThuis Betuwe" class="small-logo">
+  <h1>Over mij</h1>
+
+  <div class="content">
+    <!-- Foto links, bovenkant exact gelijk met eerste tekstregel -->
+    <img src="steffen.jpg" alt="Steffen Horvers - DigiThuis Betuwe" class="profile-photo">
+
+    <div class="text-block">
+      <h2>Over DigiThuis Betuwe</h2>
+      <p>Hallo! Ik ben Steffen, het gezicht achter DigiThuis Betuwe.</p>
+      <p>Techniek heeft mij altijd al gefascineerd, maar wat ik nóg mooier vind, is om die techniek begrijpelijk te maken voor anderen. In mijn omgeving merkte ik steeds vaker dat mensen vastliepen met hun computer, smartphone of televisie. De handleidingen zijn vaak te dik, helpdesks onbereikbaar en de vaktermen vliegen je om de oren.</p>
+      <p>Daarom ben ik DigiThuis Betuwe gestart. Ik geloof dat iedereen mee moet kunnen doen in de digitale wereld, zonder dat dit frustratie oplevert. Mijn aanpak is simpel: ik kom bij u thuis, we gaan samen aan de keukentafel zitten en lossen het probleem op. Of het nu gaat om het veilig instellen van een bank-app, het opschonen van een trage laptop of het begrijpen van uw nieuwe tablet: ik neem de tijd.</p>
+
+      <h3>Waarom kiezen voor DigiThuis Betuwe?</h3>
+      <ul>
+        <li><strong>Geduld staat voorop:</strong> Geen vraag is te gek en ik leg alles stap voor stap uit.</li>
+        <li><strong>Hulp aan huis:</strong> U hoeft niet te sjouwen met uw computer; ik kom naar u toe in de hele Betuwe.</li>
+        <li><strong>Eerlijk en vertrouwd:</strong> We lopen vooraf samen een korte intake door, zodat u precies weet waar u aan toe bent wat betreft de kosten en uw privacy.</li>
+      </ul>
+
+      <p>Naast mijn werk als ICT-hulp ben ik vaak te vinden in Geldermalsen. In mijn vrije tijd geniet ik van het coachen langs het voetbalveld, klussen in en rondom het huis of een goede barbecue. Die nuchtere Betuwse mentaliteit neem ik mee in mijn werk: eerlijk, direct en altijd gericht op een oplossing waar u écht iets aan heeft.</p>
+
+      <p>Mag ik u binnenkort ook helpen met uw digitale vragen?</p>
+
+      <p><strong>Met een vriendelijke groet,<br>Steffen Horvers</strong></p>
+    </div>
+  </div>
+
+  <div class="cta">
+    <a href="contact.html">Neem contact op</a> of bel Steffen: +31 6 44706404
+  </div>
+</header>
+
+<footer>
+  <p>© 2026 DigiThuis Betuwe – Rustige hulp bij jou thuis in de Betuwe</p>
+  <p>Steffen Horvers – +31 6 44706404</p>
+  <p style="font-size: 0.85rem; margin-top: 0.5rem;">
+    <a href="algemene-voorwaarden.pdf" target="_blank" download>Algemene Voorwaarden (PDF)</a> |
+    <a href="privacyverklaring.pdf" target="_blank" download>Privacyverklaring (PDF)</a>
+  </p>
+</footer>
+
+</body>
+</html>
