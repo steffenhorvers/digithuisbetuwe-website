@@ -20,39 +20,39 @@
       text-align: left;
       font-size: 1.15rem;
     }
-    .contact-info ul { 
-      list-style: disc; 
-      padding-left: 1.5rem; 
-      margin: 1rem 0; 
+    .contact-info ul {
+      list-style: disc;
+      padding-left: 1.5rem;
+      margin: 1rem 0;
     }
-    .buttons { 
-      display: flex; 
-      flex-wrap: wrap; 
-      justify-content: center; 
-      gap: 1.5rem; 
-      margin: 1rem 0 1.5rem; 
+    .buttons {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1.5rem;
+      margin: 1rem 0 1.5rem;
     }
-    .btn { 
-      display: inline-block; 
-      color: white; 
-      padding: 1rem 2.5rem; 
-      border-radius: 50px; 
-      text-decoration: none; 
-      font-weight: bold; 
-      font-size: 1.2rem; 
-      box-shadow: 0 4px 10px rgba(0,0,0,0.15); 
-      transition: all 0.3s; 
+    .btn {
+      display: inline-block;
+      color: white;
+      padding: 1rem 2.5rem;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.2rem;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+      transition: all 0.3s;
     }
     .btn-whatsapp { background: #25D366; }
     .btn-whatsapp:hover { background: #20b858; transform: translateY(-2px); }
     .btn-call { background: #0d6efd; }
     .btn-call:hover { background: #0b5ed7; transform: translateY(-2px); }
-    .btn-mail { 
+    .btn-mail {
       background: #6f42c1; /* paars/blauw tint */
     }
-    .btn-mail:hover { 
-      background: #5a32a3; 
-      transform: translateY(-2px); 
+    .btn-mail:hover {
+      background: #5a32a3;
+      transform: translateY(-2px);
     }
     form { max-width: 500px; margin: 1.5rem auto; text-align: left; }
     label { display: block; margin: 0.8rem 0 0.3rem; font-weight: bold; }
@@ -62,7 +62,6 @@
   </style>
 </head>
 <body>
-
 <nav>
   <ul>
     <li><a href="index.html">Home</a></li>
@@ -73,18 +72,15 @@
     <li><a href="contact.html">Contact</a></li>
   </ul>
 </nav>
-
 <header>
   <img src="Testonderkantbijgesneden50kleiner.png" alt="DigiThuis Betuwe" class="small-logo">
   <h1>Contact</h1>
   <p>Bel of app gerust – ik reageer snel!</p>
-
   <!-- Contact & Afspraak maken -->
   <div class="intro-text">
     <h2>Contact & Afspraak maken</h2>
     <p>Heeft u een vraag of wilt u direct een afspraak inplannen? Geen enkel probleem. Ik help u graag weer op weg met uw computer, tablet of telefoon. U kunt mij op verschillende manieren bereiken:</p>
     <p><strong>Direct contact</strong></p>
-
     <!-- Knoppen onder "Direct contact" -->
     <div class="buttons">
       <a href="tel:+31644706404" class="btn btn-call">
@@ -97,46 +93,44 @@
         Direct mailen
       </a>
     </div>
-
     <ul>
       <li>📍 <strong>Adres:</strong> Zoete Kroon 6, Geldermalsen</li>
       <li>Bent u aan het bellen en neem ik niet direct op? Dan ben ik waarschijnlijk iemand aan het helpen. Spreek gerust uw naam en telefoonnummer in, dan bel ik u zo snel mogelijk terug.</li>
     </ul>
   </div>
-
   <p style="font-size: 1.4rem; margin: 2rem 0 1rem;">Steffen Horvers – +31 6 44706404</p>
   <p>Zoete Kroon 6, Geldermalsen</p>
-
   <!-- Stuur een bericht -->
   <div class="intro-text" style="margin-top: 2rem;">
     <h2>Stuur een bericht</h2>
-    <p>Vindt u het prettiger als ik contact met ú opneem? Vul dan onderstaand formulier in. Ik reageer doorgaans binnen één werkdag.</p>
+    <p>Vindt u het prettiger als ik contact met u opneem? Vul dan onderstaand formulier in. Ik reageer doorgaans binnen een werkdag.</p>
   </div>
+  <form action="https://formspree.io/f/xaqdggoe" method="POST">
+    <label for="naam">Uw naam</label>
+    <input id="naam" type="text" name="naam" required placeholder="uw volledige naam">
 
-  <form name="contact" method="POST" data-netlify="true">
-    <input type="hidden" name="form-name" value="contact">
-    <label for="naam">Je naam</label>
-    <input id="naam" type="text" name="naam" required>
     <label for="telefoon">Telefoonnummer</label>
-    <input id="telefoon" type="tel" name="telefoon" required>
+    <input id="telefoon" type="tel" name="telefoon" required placeholder="06-12345678">
+
     <label for="email">E-mailadres (optioneel)</label>
-    <input id="email" type="email" name="email">
-    <label for="bericht">Waar kan ik je mee helpen?</label>
-    <textarea id="bericht" name="bericht" rows="6" required></textarea>
-    <button type="submit">Verstuur bericht</button>
+    <input id="email" type="email" name="email" placeholder="uw@email.nl">
+
+    <label for="bericht">Waar kan ik u mee helpen?</label>
+    <textarea id="bericht" name="bericht" rows="6" required placeholder="Vertel me over uw vraag of probleem..."></textarea>
+
+    <!-- Honeypot tegen spam (onzichtbaar voor mensen, bots vullen dit vaak in → Formspree blokkeert automatisch) -->
+    <input type="text" name="_gotcha" style="display:none" />
+
+    <button type="submit">Verzend</button>
   </form>
 </header>
-
 <footer>
   <p>© 2026 DigiThuis Betuwe – Rustige hulp bij jou thuis in de Betuwe</p>
   <p>Steffen Horvers – +31 6 44706404</p>
   <p style="font-size: 0.85rem; margin-top: 0.5rem;">
-    <a href="algemene-voorwaarden.pdf" target="_blank" download>Algemene Voorwaarden (PDF)</a> | 
+    <a href="algemene-voorwaarden.pdf" target="_blank" download>Algemene Voorwaarden (PDF)</a> |
     <a href="privacyverklaring.pdf" target="_blank" download>Privacyverklaring (PDF)</a>
   </p>
 </footer>
-
 </body>
 </html>
-
-
