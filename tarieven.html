@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tarieven - DigiThuis Betuwe</title>
+  <title>Tarieven Computerhulp Betuwe | Transparante Prijzen DigiThuis</title>
+  <meta name="description" content="Duidelijke tarieven voor computerhulp aan huis in de Betuwe. Geen voorrijkosten rondom Geldermalsen. Bekijk de prijzen voor WiFi, opschonen en meer.">
   <style>
     body { font-family: Arial, sans-serif; margin: 0; background: #f8f9fa; color: #333; line-height: 1.7; font-size: 1.15rem; }
     nav { background: #0d6efd; color: white; position: fixed; width: 100%; top: 0; z-index: 1000; box-shadow: 0 2px 10px rgba(0,0,0,0.15); }
@@ -13,32 +14,47 @@
     header { background: #f8f9fa; padding: 5rem 1rem 2.5rem; text-align: center; }
     .small-logo { max-width: 220px; height: auto; margin: 0 auto 0.5rem; display: block; }
     h1 { font-size: 2.8rem; color: #0d6efd; margin: 0.3rem 0; }
-    h2 { font-size: 1.8rem; color: #333; margin: 0.3rem 0 0.5rem; }
+    h2 { font-size: 1.8rem; color: #333; margin: 1.5rem 0 0.5rem; }
     .tarieven-info { 
       max-width: 700px; 
       margin: 0 auto 1.5rem; 
       text-align: left; 
-      font-size: 1.1rem; 
     }
     .tarieven-info ul { 
-      list-style: disc; 
-      padding-left: 1.5rem; 
-      margin: 1rem 0; 
+      list-style: none; 
+      padding-left: 0;
     }
+    .tarieven-info li:before { content: "✓ "; color: #25D366; font-weight: bold; }
+    
     table { 
       width: 100%; 
       max-width: 700px; 
       margin: 0 auto 1.5rem; 
       border-collapse: collapse; 
-      font-size: 1.1rem; 
-      text-align: left; 
+      background: white;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
     }
     th, td { padding: 1rem; border-bottom: 1px solid #ddd; }
-    th { background: #0d6efd; color: white; font-weight: bold; }
-    tr:nth-child(even) { background: #f2f2f2; }
+    th { background: #0d6efd; color: white; font-weight: bold; text-align: left; }
+    tr:nth-child(even) { background: #f9f9f9; }
+    
+    /* Links in tabel */
+    td a { color: #0d6efd; text-decoration: none; font-weight: bold; }
+    td a:hover { text-decoration: underline; }
+
+    .highlight-box {
+      background: #e7f1ff;
+      padding: 1.5rem;
+      border-radius: 8px;
+      max-width: 700px;
+      margin: 2rem auto;
+      border-left: 5px solid #0d6efd;
+      text-align: left;
+    }
+
     .cta { margin: 2rem 0; font-size: 1.3rem; }
     .cta a { color: #0d6efd; font-weight: bold; text-decoration: none; }
-    footer { background: #e9ecef; padding: 2rem; font-size: 0.95rem; margin-top: 3rem; }
+    footer { background: #e9ecef; padding: 2rem; font-size: 0.95rem; margin-top: 3rem; text-align: center; }
   </style>
 </head>
 <body>
@@ -55,136 +71,109 @@
 </nav>
 
 <header>
-  <img src="Testonderkantbijgesneden50kleiner.png" alt="DigiThuis Betuwe" class="small-logo">
+  <img src="Testonderkantbijgesneden50kleiner.png" alt="DigiThuis Betuwe Logo" class="small-logo">
   <h1>Tarieven</h1>
-
-  <!-- Nieuwe tekst bovenaan, nu perfect uitgelijnd met tabel -->
   <h2>Duidelijke tarieven: Transparant en eerlijk</h2>
+  
   <div class="tarieven-info">
-    <p>Ik vind het belangrijk dat u precies weet waar u aan toe bent. Geen ingewikkelde contracten of onverwachte kosten achteraf. We bespreken de prijs altijd vooraf, zodat u niet voor verrassingen komt te staan. Alle genoemde tarieven zijn inclusief BTW.</p>
-    <p><strong>De basis:</strong></p>
+    <p>Ik vind het belangrijk dat u precies weet waar u aan toe bent. Geen ingewikkelde contracten of onverwachte kosten achteraf. Alle genoemde tarieven zijn inclusief BTW.</p>
     <ul>
-      <li>Standaardtarief: € 50 per uur.</li>
-      <li>Geen voorrijkosten: In een straal van 10 kilometer rondom Geldermalsen breng ik geen reiskosten in rekening.</li>
-      <li>Betalingen zoals u wilt: Na afloop kunt u eenvoudig betalen via een betaalverzoek (Tikkie), per factuur, per pin of gewoon contant.</li>
+      <li><strong>Standaardtarief:</strong> € 50 per uur.</li>
+      <li><strong>Geen voorrijkosten:</strong> In een straal van 10 km rondom Geldermalsen.</li>
+      <li><strong>Eenvoudig betalen:</strong> Via Tikkie, factuur, pin of contant.</li>
     </ul>
-    <p><em>Alle prijzen zijn inclusief btw.</em></p>
   </div>
 
-  <table>
+<table>
     <tr>
       <th>Dienst</th>
-      <th>Prijs</th>
+      <th>Prijsindicatie</th>
     </tr>
     <tr>
-      <td>Hulp op afstand of telefonisch</td>
-      <td>€20 maximaal 20 min.</td>
+      <td>Hulp op afstand / Telefoon (max 20 min)</td>
+      <td>€ 20</td>
     </tr>
     <tr>
-      <td>Korte klus in Geldermalsen en directe omgeving (tot 2 km)</td>
+      <td>Korte klus Geldermalsen (max 20 min, tot 2 km)</td>
       <td>€ 25</td>
-    </tr>    
+    </tr>
     <tr>
-      <td>Korte klus (tot 10km)</td>
-      <td>€ 50</td>
-    </tr>    
-    <tr>
-      <td>Printer aansluiten & werkend maken</td>
+      <td>Korte klus (tot 10 km)</td>
       <td>€ 50</td>
     </tr>
     <tr>
-      <td>Telefoon of tablet instellen</td>
+      <td><a href="printer-installeren.html">Printer installeren & werkend maken</a></td>
+      <td>€ 50</td>
+    </tr>
+    <tr>
+      <td><a href="nieuwe-telefoon-instellen.html">Telefoon of tablet instellen</a></td>
       <td>€ 50 – € 75</td>
     </tr>
     <tr>
-      <td>Nieuwe computer gebruiksklaar maken</td>
+      <td><a href="nieuwe-computer-laptop-instellen.html">Nieuwe computer gebruiksklaar maken</a></td>
       <td>€ 75 – € 125</td>
     </tr>
     <tr>
-      <td>Foto’s & bestanden veilig overzetten</td>
+      <td><a href="veiligheid-en-opslag-fotos.html">Foto’s & bestanden veilig overzetten</a></td>
       <td>€ 65 – € 100</td>
     </tr>
     <tr>
-      <td>Hulp bij DigiD, bank-app of e-mail</td>
+      <td><a href="hulp-bij-digid-en-bankieren.html">Hulp bij DigiD, bank-app of e-mail</a></td>
       <td>€ 50 – € 70</td>
     </tr>
     <tr>
-      <td>Computer opschonen & versnellen</td>
-      <td>€ 65–€ 100</td>
+      <td><a href="trage-computer-opschonen.html">Computer opschonen & versnellen</a></td>
+      <td>€ 65 – € 100</td>
     </tr>
     <tr>
-      <td>Verloren bestanden/foto's terugzoeken (Data-recovery)</td>
-      <td>vanaf € 80 - € 150+ (afhankelijk van complexiteit)</td>
+      <td><a href="veiligheid-en-opslag-fotos.html">Data-recovery (bestanden terugzoeken)</a></td>
+      <td>v.a. € 80</td>
     </tr>
     <tr>
       <td>Tv, geluid & Chromecast (ook caravan)</td>
       <td>€ 60 – € 90</td>
     </tr>
     <tr>
-      <td>Camerasysteem installeren</td>
+      <td><a href="beeld-en-geluid-instellen.html">Tv, geluid & Chromecast (ook caravan)</a></td>
+      <td>€ 60 – € 90</td>
+    </tr>
+    <tr>
+      <td><a href="huisbeveiliging-camera-installeren.html">Camerasysteem installeren</a></td>
       <td>€ 75 – € 120</td>
     </tr>
     <tr>
-      <td>Uitleg Word, Excel of PowerPoint</td>
-      <td>€ 50 – € 80 per sessie</td>
-    </tr>
-    <tr>
-      <td>DigiThuis Zekerheid Abonnement</td>
-      <td>€8,50 per maand</td>
-    </tr>    
-  </table>
-  <div class="tarieven-info">
-    <p><em>"Het tarief van € 25,- geldt voor een korte, enkelvoudige handeling van maximaal 20 minuten. Voor specifiekere werkzaamheden zoals een printer installeren of hulp bij apps, hanteer ik de tarieven in de onderstaande lijst."</em></p>
-  </div>
-
-  <!-- Nieuwe slotzin onder de tabel -->
-  <div class="tarieven-info">
-    <p><strong>DigiThuis Zekerheid Abonnement</strong></p>
-    <p>Bespaar direct €10,- per uur op alle hulp aan huis.<p>    
-  </div>
-
-  <table>
-    <tr>
-      <th>Dienst</th>
-      <th>Prijs</th>
-    </tr>
-    <tr>
-      <td>DigiThuis Zekerheid Abonnement</strong></td>
-      <td>€8,50 per maand</td>
+      <td><a href="uitleg-programmas-word-excel.html">Uitleg Word, Excel of PowerPoint</a></td>
+      <td>€ 50 – € 80</td>
     </tr>
   </table>
-  
-  <div class="tarieven-info">
-    
-    <p><strong>De zekerheden:</strong></p>
+
+  <div class="tarieven-info" style="margin-top: -0.5rem; margin-bottom: 2rem;">
+    <p><em>"Het tarief van € 25,- geldt voor een korte, enkelvoudige handeling van maximaal 20 minuten. Voor specifiekere werkzaamheden zoals een printer installeren of hulp bij apps, hanteer ik de tarieven in de bovenstaande lijst."</em></p>
+  </div>
+
+  <div class="highlight-box">
+    <h3>Bespaar met het DigiThuis Zekerheid Abonnement</h3>
+    <p>Voor slechts <strong>€ 8,50 per maand</strong> geniet u van extra voordeel en zekerheid:</p>
     <ul>
-      <li>Jaarlijkse Digitale APK: Eén keer per jaar kom ik bij u langs (of doen we dit op afstand) voor een volledige opschoonbeurt, controle van de back-up en updates van uw beveiliging (waarde €65–€100).</li>
-      <li>Onbeperkt korte vragen: Heeft u een snelle vraag via WhatsApp of e-mail? Ik help u direct, zonder dat de teller gaat lopen.</li>
-      <li>Ledenvoordeel: Heeft u toch hulp aan huis nodig voor een groter probleem? Dan betaalt u slechts € 40,- per uur in plaats van € 50,-.</li>
+      <li><strong>Jaarlijkse Digitale APK:</strong> Volledige opschoonbeurt en controle (t.w.v. € 65-100).</li>
+      <li><strong>Ledenvoordeel:</strong> Slechts € 40,- per uur voor hulp aan huis (bespaar € 10,- per uur).</li>
+      <li><strong>Onbeperkt korte vragen:</strong> Direct hulp via WhatsApp of e-mail zonder kosten.</li>
     </ul>
+    <p><em>Ideaal voor wie graag een vast aanspreekpunt heeft voor alle digitale vragen.</em></p>
   </div>
-
-  </p>
-  <p style="max-width: 700px; margin: 1.5rem auto; font-size: 1.1rem; text-align: left;">
-    Goed om te weten: De exacte prijs hangt altijd af van de specifieke situatie en uw wensen. Ik geef u vooraf altijd een eerlijke inschatting van de kosten.
-  </p>
 
   <div class="cta">
-    Interesse? <a href="contact.html">Neem contact op</a> of bel Steffen: <a href="tel:+31644706404">+31 6 44706404</a>
+    Interesse? <a href="contact.html">Neem contact op</a> of bel Steffen: <a href="tel:+31644706404">06 - 44 70 64 04</a>
   </div>
 </header>
 
 <footer>
-  <p>© 2026 DigiThuis Betuwe – Rustige hulp bij jou thuis in de Betuwe</p>
-  <p>Steffen Horvers – +31 6 44706404</p>
-  <p style="font-size: 0.85rem; margin-top: 0.5rem;">
-    <a href="algemene-voorwaarden.pdf" target="_blank" download>Algemene Voorwaarden (PDF)</a> | 
-    <a href="privacyverklaring.pdf" target="_blank" download>Privacyverklaring (PDF)</a>
+  <p>© 2026 DigiThuis Betuwe – Rustige hulp bij u thuis in de Betuwe</p>
+  <p>
+    <a href="algemene-voorwaarden.html" style="color: #333;">Algemene Voorwaarden</a> | 
+    <a href="privacyverklaring.html" style="color: #333;">Privacyverklaring</a>
   </p>
 </footer>
 
 </body>
 </html>
-
-
-
