@@ -27,7 +27,7 @@
     .intro a:hover { text-decoration: underline; }
 
     /* Review Sectie */
-    .review-box { background: white; padding: 2rem; border-radius: 15px; border: 1px solid #ddd; margin: 3rem 0; box-shadow: 0 4px 15px rgba(0,0,0,0.05); }
+    .review-box { background: white; padding: 2rem; border-radius: 15px; border: 1px solid #ddd; margin: 3rem 0; box-shadow: 0 4px 15px rgba(0,0,0,0.05); text-align: center; }
     .stars { color: #fbbc05; font-size: 1.5rem; }
     .review-text { font-style: italic; color: #555; margin: 1rem 0; }
 
@@ -38,7 +38,7 @@
     .faq-question:after { content: '+'; font-size: 1.5rem; color: #0d6efd; }
     .faq-item.active .faq-question:after { content: '−'; }
     .faq-answer { padding: 0 1.5rem; max-height: 0; overflow: hidden; transition: max-height 0.3s ease-out; background: #f9f9f9; }
-    .faq-item.active .faq-answer { max-height: 200px; }
+    .faq-item.active .faq-answer { max-height: 250px; } /* Verhoogd voor langere antwoorden */
 
     .whatsapp-btn { display: inline-block; background: #25D366; color: white; padding: 1rem 2.5rem; border-radius: 50px; text-decoration: none; font-weight: bold; font-size: 1.2rem; margin: 2rem 0; box-shadow: 0 4px 10px rgba(0,0,0,0.15); transition: 0.3s; }
     .whatsapp-btn:hover { background: #20b858; transform: translateY(-2px); }
@@ -90,50 +90,9 @@
     <div class="stars">★★★★★</div>
     <p class="review-text">"Super fijne hulp gehad van Steffen. Hij legt alles rustig uit en neemt echt de tijd voor je digitale vragen. Een aanrader!"</p>
     <p><strong>5.0 sterren op Google</strong></p>
-    <a href="https://search.google.com/local/reviews?placeid=ChIJAVAAAAADxmZHt6o8y-kC6u8" target="_blank" style="color: #4285F4; font-weight: bold; text-decoration: none;">Lees al onze reviews op Google →</a>
+    <a href="https://www.google.com/search?q=DigiThuis+Betuwe#lrd=0x47c663a03350993d:0x70be0929cb3be7b7,1" target="_blank" style="color: #4285F4; font-weight: bold; text-decoration: none;">Lees al onze reviews op Google →</a>
   </section>
 
   <section>
-    <h2>Veelgestelde vragen</h2>
-    <div class="faq-container">
-      <div class="faq-item">
-        <button class="faq-question">Moet ik mijn computer ergens naartoe brengen?</button>
-        <div class="faq-answer"><p>Nee, juist niet! Ik kom bij u thuis in de Betuwe. Dit is voor u gemakkelijker en ik zie direct hoe alles in uw eigen omgeving werkt.</p></div>
-      </div>
-      <div class="faq-item">
-        <button class="faq-question">Wat als mijn probleem niet in de lijst staat?</button>
-        <div class="faq-answer"><p>Geen zorgen. De lijst bevat de meest voorkomende klussen. Bel of app me gerust; grote kans dat ik u alsnog kan helpen.</p></div>
-      </div>
-      <div class="faq-item">
-        <button class="faq-question">Hoe kan ik betalen voor de hulp?</button>
-        <div class="faq-answer"><p>U kunt direct na afloop eenvoudig betalen via een betaalverzoek (Tikkie), per pin of contant. Net wat u prettig vindt.</p></div>
-      </div>
-    </div>
-  </section>
-
-  <div style="text-align: center;">
-    <a href="https://wa.me/31644706404?text=Hoi%20Steffen%2C%20ik%20heb%20hulp%20nodig..." class="whatsapp-btn" target="_blank">Stuur een WhatsApp-bericht</a>
-  </div>
-</main>
-
-<footer>
-  <p>Volg DigiThuis voor digitale tips: 
-    <a href="https://www.facebook.com/DigiThuisBetuwe" target="_blank">Facebook</a>
-  </p>
-  <p>© 2026 DigiThuis Betuwe – Rustige hulp bij u thuis in de Betuwe</p>
-  <p>Steffen Horvers – 06 - 44 70 64 04</p>
-  <p style="font-size: 0.85rem; margin-top: 0.5rem;">
-    <a href="algemene-voorwaarden.html">Algemene Voorwaarden</a> | 
-    <a href="privacyverklaring.html">Privacyverklaring</a>
-  </p>
-</footer>
-
-<script>
-  document.querySelectorAll('.faq-question').forEach(button => {
-    button.addEventListener('click', () => {
-      button.parentElement.classList.toggle('active');
-    });
-  });
-</script>
-</body>
-</html>
+    <h2 style="text-align: center;">Veelgestelde vragen</h2>
+    <div class="faq
