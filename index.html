@@ -19,26 +19,23 @@
     
     .container { max-width: 800px; margin: 0 auto; text-align: left; padding: 0 1rem; }
     
-    /* Dienstenlijst */
     .intro ul { list-style: none; padding: 0; }
     .intro li { margin: 0.8rem 0; padding-left: 3rem; position: relative; border-bottom: 1px solid #eee; padding-bottom: 0.5rem; }
     .intro li:before { content: "✓"; color: #25D366; position: absolute; left: 0.5rem; font-size: 1.5rem; font-weight: bold; }
     .intro a { color: #0d6efd; text-decoration: none; font-weight: bold; }
     .intro a:hover { text-decoration: underline; }
 
-    /* Review Sectie */
     .review-box { background: white; padding: 2rem; border-radius: 15px; border: 1px solid #ddd; margin: 3rem 0; box-shadow: 0 4px 15px rgba(0,0,0,0.05); text-align: center; }
     .stars { color: #fbbc05; font-size: 1.5rem; }
     .review-text { font-style: italic; color: #555; margin: 1rem 0; }
 
-    /* FAQ Sectie */
     .faq-container { margin: 2rem 0; }
     .faq-item { margin-bottom: 0.5rem; border: 1px solid #ddd; border-radius: 8px; background: white; overflow: hidden; }
     .faq-question { width: 100%; padding: 1rem 1.5rem; background: white; border: none; text-align: left; font-size: 1.1rem; font-weight: bold; cursor: pointer; display: flex; justify-content: space-between; align-items: center; }
     .faq-question:after { content: '+'; font-size: 1.5rem; color: #0d6efd; }
     .faq-item.active .faq-question:after { content: '−'; }
     .faq-answer { padding: 0 1.5rem; max-height: 0; overflow: hidden; transition: max-height 0.3s ease-out; background: #f9f9f9; }
-    .faq-item.active .faq-answer { max-height: 250px; } /* Verhoogd voor langere antwoorden */
+    .faq-item.active .faq-answer { max-height: 250px; }
 
     .whatsapp-btn { display: inline-block; background: #25D366; color: white; padding: 1rem 2.5rem; border-radius: 50px; text-decoration: none; font-weight: bold; font-size: 1.2rem; margin: 2rem 0; box-shadow: 0 4px 10px rgba(0,0,0,0.15); transition: 0.3s; }
     .whatsapp-btn:hover { background: #20b858; transform: translateY(-2px); }
@@ -69,7 +66,6 @@
 <main class="container">
   <section class="intro">
     <p>Rustige, persoonlijke computerhulp aan huis – gewoon bij u in de Betuwe. Ik kom graag bij u langs om digitale problemen op te lossen, zonder ingewikkelde technische termen.</p>
-    
     <p><strong>Wat ik voor u kan doen:</strong></p>
     <ul>
       <li><a href="printer-installeren.html">Printer & Randapparatuur</a></li>
@@ -90,7 +86,7 @@
     <div class="stars">★★★★★</div>
     <p class="review-text">"Super fijne hulp gehad van Steffen. Hij legt alles rustig uit en neemt echt de tijd voor je digitale vragen. Een aanrader!"</p>
     <p><strong>5.0 sterren op Google</strong></p>
-    <a href="https://www.google.com/search?q=DigiThuis+Betuwe#lrd=0x47c663a03350993d:0x70be0929cb3be7b7,1" target="_blank" style="color: #4285F4; font-weight: bold; text-decoration: none;">Lees al onze reviews op Google →</a>
+    <a href="https://share.google/c3ZXq9UVhuGchRUGa" target="_blank" style="color: #4285F4; font-weight: bold; text-decoration: none;">Bekijk profiel & reviews op Google →</a>
   </section>
 
   <section>
@@ -98,23 +94,23 @@
     <div class="faq-container">
       <div class="faq-item">
         <button class="faq-question">In welke plaatsen komt DigiThuis Betuwe aan huis?</button>
-        <div class="faq-answer"><p>Ik kom bij u langs in de gehele Betuwe, waaronder Geldermalsen, Buren, Tiel, Culemborg, Beesd en omliggende dorpen. Woont u iets verder weg? Neem gerust contact op.</p></div>
+        <div class="faq-answer"><p>Ik kom bij u langs in de gehele Betuwe, waaronder Geldermalsen, Buren, Tiel, Culemborg, Beesd en omliggende dorpen.</p></div>
       </div>
       <div class="faq-item">
         <button class="faq-question">Is mijn privacy veilig bij hulp met DigiD of bankieren?</button>
-        <div class="faq-answer"><p>Absoluut. Veiligheid en privacy staan op nummer één. Ik sla nooit wachtwoorden op en we voeren gevoelige handelingen altijd samen uit, zodat u de volledige controle houdt.</p></div>
+        <div class="faq-answer"><p>Absoluut. Veiligheid en privacy staan op nummer één. Ik sla nooit wachtwoorden op en we voeren gevoelige handelingen altijd samen uit.</p></div>
       </div>
       <div class="faq-item">
         <button class="faq-question">Wat als mijn probleem niet op de website staat?</button>
-        <div class="faq-answer"><p>Geen zorgen. De lijst bevat de meest voorkomende klussen. Bel of app me gerust; grote kans dat ik u alsnog kan helpen of gericht kan adviseren.</p></div>
+        <div class="faq-answer"><p>Geen zorgen. Bel of app me gerust; grote kans dat ik u alsnog kan helpen of gericht kan adviseren.</p></div>
       </div>
       <div class="faq-item">
         <button class="faq-question">Hoe kan ik de hulp van DigiThuis betalen?</button>
-        <div class="faq-answer"><p>U kunt direct na afloop eenvoudig betalen via een betaalverzoek (Tikkie) op uw telefoon, per bankoverschrijving, contant of ik stuur u een factuur per e-mail.</p></div>
+        <div class="faq-answer"><p>U kunt direct na afloop eenvoudig betalen via een betaalverzoek (Tikkie), per pin of contant.</p></div>
       </div>
       <div class="faq-item">
-        <button class="faq-question">Helpt u ook met apparaten zoals een Smart TV of deurbel?</button>
-        <div class="faq-answer"><p>Zeker. Of het nu gaat om het instellen van een Chromecast, een digitale deurbel of een geluidsinstallatie in uw caravan: ik help u graag met de installatie en uitleg.</p></div>
+        <button class="faq-question">Helpt u ook met een Smart TV of deurbel?</button>
+        <div class="faq-answer"><p>Zeker. Of het nu gaat om een Chromecast, digitale deurbel of geluidsinstallatie in uw caravan: ik help u graag.</p></div>
       </div>
     </div>
   </section>
@@ -128,8 +124,8 @@
   <p>Volg DigiThuis voor digitale tips: 
     <a href="https://www.facebook.com/DigiThuisBetuwe" target="_blank">Facebook</a>
   </p>
-  <p>© 2026 DigiThuis Betuwe – Rustige hulp bij u thuis in de Betuwe</p>
-  <p>Steffen Horvers – 06 - 44 70 64 04</p>
+  <p>© 2026 DigiThuis Betuwe – Steffen Horvers – Geldermalsen</p>
+  <p>06 - 44 70 64 04</p>
   <p style="font-size: 0.85rem; margin-top: 0.5rem;">
     <a href="algemene-voorwaarden.html">Algemene Voorwaarden</a> | 
     <a href="privacyverklaring.html">Privacyverklaring</a>
