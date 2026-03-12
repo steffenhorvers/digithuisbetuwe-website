@@ -11,24 +11,40 @@
     nav ul { list-style: none; margin: 0; padding: 0.8rem; display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap; }
     nav a { color: white; text-decoration: none; font-weight: bold; font-size: clamp(1rem, 4vw, 1.1rem); }
     nav a:hover { text-decoration: underline; }
-    header { background: #f8f9fa; padding: 4.5rem 1rem 2rem; }
-    .logo { max-width: 90%; height: auto; margin: 0 auto 0.4rem; display: block; }
+    
+    header { background: #f8f9fa; padding: 5rem 1rem 2rem; }
+    .logo { max-width: 250px; height: auto; margin: 0 auto 0.4rem; display: block; }
     h1 { font-size: 2.8rem; color: #0d6efd; margin: 0.3rem 0; }
     h2 { font-size: 1.8rem; color: #333; margin: 0.3rem 0 1rem; }
-    .intro { max-width: 800px; margin: 1rem auto; text-align: left; }
     
-    /* Verbeterde lijst met vinkjes en links */
-    .intro ul { list-style: none; padding: 0; text-align: left; }
+    .container { max-width: 800px; margin: 0 auto; text-align: left; padding: 0 1rem; }
+    
+    /* Dienstenlijst */
+    .intro ul { list-style: none; padding: 0; }
     .intro li { margin: 0.8rem 0; padding-left: 3rem; position: relative; border-bottom: 1px solid #eee; padding-bottom: 0.5rem; }
-    .intro li:last-child { border-bottom: none; }
     .intro li:before { content: "✓"; color: #25D366; position: absolute; left: 0.5rem; font-size: 1.5rem; font-weight: bold; }
     .intro a { color: #0d6efd; text-decoration: none; font-weight: bold; }
     .intro a:hover { text-decoration: underline; }
 
-    .whatsapp-btn { display: inline-block; background: #25D366; color: white; padding: 1rem 2.5rem; border-radius: 50px; text-decoration: none; font-weight: bold; font-size: 1.2rem; margin: 1.5rem 0; box-shadow: 0 4px 10px rgba(0,0,0,0.15); transition: all 0.3s; }
+    /* Review Sectie */
+    .review-box { background: white; padding: 2rem; border-radius: 15px; border: 1px solid #ddd; margin: 3rem 0; box-shadow: 0 4px 15px rgba(0,0,0,0.05); }
+    .stars { color: #fbbc05; font-size: 1.5rem; }
+    .review-text { font-style: italic; color: #555; margin: 1rem 0; }
+
+    /* FAQ Sectie */
+    .faq-container { margin: 2rem 0; }
+    .faq-item { margin-bottom: 0.5rem; border: 1px solid #ddd; border-radius: 8px; background: white; overflow: hidden; }
+    .faq-question { width: 100%; padding: 1rem 1.5rem; background: white; border: none; text-align: left; font-size: 1.1rem; font-weight: bold; cursor: pointer; display: flex; justify-content: space-between; align-items: center; }
+    .faq-question:after { content: '+'; font-size: 1.5rem; color: #0d6efd; }
+    .faq-item.active .faq-question:after { content: '−'; }
+    .faq-answer { padding: 0 1.5rem; max-height: 0; overflow: hidden; transition: max-height 0.3s ease-out; background: #f9f9f9; }
+    .faq-item.active .faq-answer { max-height: 200px; }
+
+    .whatsapp-btn { display: inline-block; background: #25D366; color: white; padding: 1rem 2.5rem; border-radius: 50px; text-decoration: none; font-weight: bold; font-size: 1.2rem; margin: 2rem 0; box-shadow: 0 4px 10px rgba(0,0,0,0.15); transition: 0.3s; }
     .whatsapp-btn:hover { background: #20b858; transform: translateY(-2px); }
-    footer { background: #e9ecef; padding: 2rem; font-size: 0.95rem; margin-top: 3rem; }
-    footer a { color: #333; text-decoration: underline; }
+
+    footer { background: #e9ecef; padding: 2rem; font-size: 0.95rem; margin-top: 3rem; text-align: center; }
+    footer a { color: #0d6efd; text-decoration: none; font-weight: bold; }
   </style>
 </head>
 <body>
@@ -45,44 +61,79 @@
 </nav>
 
 <header>
-  <img src="Testonderkantbijgesneden50kleiner.png" alt="DigiThuis Betuwe Logo computerhulp aan huis" class="logo">
-
+  <img src="Testonderkantbijgesneden50kleiner.png" alt="DigiThuis Betuwe Logo" class="logo">
   <h1>DigiThuis Betuwe</h1>
   <h2>Computerhulp aan huis</h2>
-
-  <div class="intro">
-    <p>Rustige, persoonlijke computerhulp aan huis – gewoon bij u in de Betuwe.<br>
-    Loopt u vast met een trage computer, een printer die niet luistert of een nieuwe telefoon? Dat kan heel frustrerend zijn. Ik kom graag bij u langs om u te helpen, zonder ingewikkelde technische termen.</p>
-
-    <p><strong>Wat ik voor u kan doen:</strong></p>
-    <ul>
-      <li><a href="printer-installeren.html">Printer & Randapparatuur</a>: Installeren, aansluiten en weer probleemloos laten printen of scannen.</li>
-      <li><a href="wifi-problemen-oplossen.html">WiFi & Internet</a>: Overal in huis een goede verbinding, haperingen oplossen en routers instellen.</li>
-      <li><a href="nieuwe-telefoon-instellen.html">Telefoon & Tablet</a>: Overstap naar een nieuw toestel en hulp bij uw dagelijkse apps.</li>
-      <li><a href="nieuwe-computer-laptop-instellen.html">Nieuwe Computer of Laptop</a>: Gebruiksklaar maken en al uw bestanden veilig overzetten.</li>
-      <li><a href="hulp-bij-digid-en-bankieren.html">Hulp bij DigiD & Bankieren</a>: Veilig inloggen en bank-apps installeren op uw telefoon.</li>
-      <li><a href="veiligheid-en-opslag-fotos.html">Veiligheid & Opslag</a>: Foto’s, contacten en belangrijke documenten veilig bewaren of terugvinden (ook data-recovery).</li>
-      <li><a href="trage-computer-opschonen.html">Onderhoud & Snelheid</a>: Uw computer opschonen en weer merkbaar sneller maken.</li>
-      <li><a href="beeld-en-geluid-instellen.html">Beeld & Geluid</a>: Uw televisie, geluidssysteem of Chromecast instellen (ook in uw caravan).</li>
-      <li><a href="huisbeveiliging-camera-installeren.html">Huisbeveiliging</a>: Slimme camera's of deurbel aansluiten en uitleg op uw tablet.</li>
-      <li><a href="uitleg-programmas-word-excel.html">Uitleg Programma's</a>: Rustige hulp bij het werken met Word, Excel of PowerPoint.</li>
-    </ul>
-
-    <p>Geen haast, geen moeilijke woorden – gewoon hulp die werkt. Woont u in Geldermalsen, Buren, Tiel, Culemborg of omgeving? Bel, app of mail me gerust voor een afspraak – ik kom graag langs!</p>
-  </div>
-
-  <a href="https://wa.me/31644706404?text=Hoi%20Steffen%2C%20ik%20heb%20hulp%20nodig%20met%20mijn%20computer..." class="whatsapp-btn" target="_blank">
-    Stuur mij een WhatsApp-bericht
-  </a>
 </header>
 
+<main class="container">
+  <section class="intro">
+    <p>Rustige, persoonlijke computerhulp aan huis – gewoon bij u in de Betuwe. Ik kom graag bij u langs om digitale problemen op te lossen, zonder ingewikkelde technische termen.</p>
+    
+    <p><strong>Wat ik voor u kan doen:</strong></p>
+    <ul>
+      <li><a href="printer-installeren.html">Printer & Randapparatuur</a></li>
+      <li><a href="wifi-problemen-oplossen.html">WiFi & Internet</a></li>
+      <li><a href="nieuwe-telefoon-instellen.html">Telefoon & Tablet</a></li>
+      <li><a href="nieuwe-computer-laptop-instellen.html">Nieuwe Computer of Laptop</a></li>
+      <li><a href="hulp-bij-digid-en-bankieren.html">Hulp bij DigiD & Bankieren</a></li>
+      <li><a href="veiligheid-en-opslag-fotos.html">Veiligheid & Opslag Foto's</a></li>
+      <li><a href="trage-computer-opschonen.html">Onderhoud & Snelheid</a></li>
+      <li><a href="beeld-en-geluid-instellen.html">Beeld & Geluid (TV/Chromecast)</a></li>
+      <li><a href="huisbeveiliging-camera-installeren.html">Huisbeveiliging & Camera</a></li>
+      <li><a href="uitleg-programmas-word-excel.html">Uitleg Word & Excel</a></li>
+    </ul>
+  </section>
+
+  <section class="review-box">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" alt="Google" style="width: 80px;">
+    <div class="stars">★★★★★</div>
+    <p class="review-text">"Super fijne hulp gehad van Steffen. Hij legt alles rustig uit en neemt echt de tijd voor je digitale vragen. Een aanrader!"</p>
+    <p><strong>5.0 sterren op Google</strong></p>
+    <a href="https://search.google.com/local/reviews?placeid=ChIJAVAAAAADxmZHt6o8y-kC6u8" target="_blank" style="color: #4285F4; font-weight: bold; text-decoration: none;">Lees al onze reviews op Google →</a>
+  </section>
+
+  <section>
+    <h2>Veelgestelde vragen</h2>
+    <div class="faq-container">
+      <div class="faq-item">
+        <button class="faq-question">Moet ik mijn computer ergens naartoe brengen?</button>
+        <div class="faq-answer"><p>Nee, juist niet! Ik kom bij u thuis in de Betuwe. Dit is voor u gemakkelijker en ik zie direct hoe alles in uw eigen omgeving werkt.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">Wat als mijn probleem niet in de lijst staat?</button>
+        <div class="faq-answer"><p>Geen zorgen. De lijst bevat de meest voorkomende klussen. Bel of app me gerust; grote kans dat ik u alsnog kan helpen.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">Hoe kan ik betalen voor de hulp?</button>
+        <div class="faq-answer"><p>U kunt direct na afloop eenvoudig betalen via een betaalverzoek (Tikkie), per pin of contant. Net wat u prettig vindt.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <div style="text-align: center;">
+    <a href="https://wa.me/31644706404?text=Hoi%20Steffen%2C%20ik%20heb%20hulp%20nodig..." class="whatsapp-btn" target="_blank">Stuur een WhatsApp-bericht</a>
+  </div>
+</main>
+
 <footer>
-  <p>© 2026 DigiThuis Betuwe – Rustige hulp bij jou thuis in de Betuwe</p>
-  <p>Steffen Horvers – +31 6 44706404</p>
+  <p>Volg DigiThuis voor digitale tips: 
+    <a href="https://www.facebook.com/DigiThuisBetuwe" target="_blank">Facebook</a>
+  </p>
+  <p>© 2026 DigiThuis Betuwe – Rustige hulp bij u thuis in de Betuwe</p>
+  <p>Steffen Horvers – 06 - 44 70 64 04</p>
   <p style="font-size: 0.85rem; margin-top: 0.5rem;">
     <a href="algemene-voorwaarden.html">Algemene Voorwaarden</a> | 
     <a href="privacyverklaring.html">Privacyverklaring</a>
   </p>
 </footer>
+
+<script>
+  document.querySelectorAll('.faq-question').forEach(button => {
+    button.addEventListener('click', () => {
+      button.parentElement.classList.toggle('active');
+    });
+  });
+</script>
 </body>
 </html>
