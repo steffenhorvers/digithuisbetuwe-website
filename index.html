@@ -95,4 +95,53 @@
 
   <section>
     <h2 style="text-align: center;">Veelgestelde vragen</h2>
-    <div class="faq
+    <div class="faq-container">
+      <div class="faq-item">
+        <button class="faq-question">In welke plaatsen komt DigiThuis Betuwe aan huis?</button>
+        <div class="faq-answer"><p>Ik kom bij u langs in de gehele Betuwe, waaronder Geldermalsen, Buren, Tiel, Culemborg, Beesd en omliggende dorpen. Woont u iets verder weg? Neem gerust contact op.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">Is mijn privacy veilig bij hulp met DigiD of bankieren?</button>
+        <div class="faq-answer"><p>Absoluut. Veiligheid en privacy staan op nummer één. Ik sla nooit wachtwoorden op en we voeren gevoelige handelingen altijd samen uit, zodat u de volledige controle houdt.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">Wat als mijn probleem niet op de website staat?</button>
+        <div class="faq-answer"><p>Geen zorgen. De lijst bevat de meest voorkomende klussen. Bel of app me gerust; grote kans dat ik u alsnog kan helpen of gericht kan adviseren.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">Hoe kan ik de hulp van DigiThuis betalen?</button>
+        <div class="faq-answer"><p>U kunt direct na afloop eenvoudig betalen via een betaalverzoek (Tikkie) op uw telefoon, per bankoverschrijving, contant of ik stuur u een factuur per e-mail.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">Helpt u ook met apparaten zoals een Smart TV of deurbel?</button>
+        <div class="faq-answer"><p>Zeker. Of het nu gaat om het instellen van een Chromecast, een digitale deurbel of een geluidsinstallatie in uw caravan: ik help u graag met de installatie en uitleg.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <div style="text-align: center;">
+    <a href="https://wa.me/31644706404?text=Hoi%20Steffen%2C%20ik%20heb%20hulp%20nodig..." class="whatsapp-btn" target="_blank">Stuur een WhatsApp-bericht</a>
+  </div>
+</main>
+
+<footer>
+  <p>Volg DigiThuis voor digitale tips: 
+    <a href="https://www.facebook.com/DigiThuisBetuwe" target="_blank">Facebook</a>
+  </p>
+  <p>© 2026 DigiThuis Betuwe – Rustige hulp bij u thuis in de Betuwe</p>
+  <p>Steffen Horvers – 06 - 44 70 64 04</p>
+  <p style="font-size: 0.85rem; margin-top: 0.5rem;">
+    <a href="algemene-voorwaarden.html">Algemene Voorwaarden</a> | 
+    <a href="privacyverklaring.html">Privacyverklaring</a>
+  </p>
+</footer>
+
+<script>
+  document.querySelectorAll('.faq-question').forEach(button => {
+    button.addEventListener('click', () => {
+      button.parentElement.classList.toggle('active');
+    });
+  });
+</script>
+</body>
+</html>
