@@ -6,29 +6,72 @@
   <title>Contact - DigiThuis Betuwe</title>
   <link rel="canonical" href="https://digithuisbetuwe.nl/contact.html" />
   <link rel="icon" type="image/png" href="logobijgesneden.png">
-  
+ 
   <style>
-    body { font-family: Arial, sans-serif; margin: 0; background: #f8f9fa; color: #333; line-height: 1.7; font-size: 1.15rem; }
-    nav { background: #0d6efd; color: white; position: fixed; width: 100%; top: 0; z-index: 1000; box-shadow: 0 2px 10px rgba(0,0,0,0.15); }
-    nav ul { list-style: none; margin: 0; padding: 0.8rem; display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap; }
-    nav a { color: white; text-decoration: none; font-weight: bold; font-size: clamp(1rem, 4vw, 1.1rem); }
+    body { 
+      font-family: Arial, sans-serif; 
+      margin: 0; 
+      background: #f8f9fa; 
+      color: #333; 
+      line-height: 1.7; 
+      font-size: 1.15rem; 
+    }
+    nav { 
+      background: #0d6efd; 
+      color: white; 
+      position: fixed; 
+      width: 100%; 
+      top: 0; 
+      z-index: 1000; 
+      box-shadow: 0 2px 10px rgba(0,0,0,0.15); 
+    }
+    nav ul { 
+      list-style: none; 
+      margin: 0; 
+      padding: 0.8rem; 
+      display: flex; 
+      justify-content: center; 
+      gap: 2rem; 
+      flex-wrap: wrap; 
+    }
+    nav a { 
+      color: white; 
+      text-decoration: none; 
+      font-weight: bold; 
+      font-size: clamp(1rem, 4vw, 1.1rem); 
+    }
     nav a:hover { text-decoration: underline; }
-    header { background: #f8f9fa; padding: 5rem 1rem 2.5rem; text-align: center; }
-    footer { background: #e9ecef; padding: 2rem; font-size: 0.95rem; margin-top: 3rem; text-align: center; /* Dit zorgt voor de centrering */} footer p {  margin: 0.5rem 0; /* Geeft wat rust tussen de regels */}
-   .small-logo { max-width: 220px; height: auto; margin: 0 auto 0.5rem; display: block; }
+
+    header { 
+      background: #f8f9fa; 
+      padding: 5rem 1rem 2.5rem; 
+      text-align: center; 
+    }
+    footer { 
+      background: #e9ecef; 
+      padding: 2rem; 
+      font-size: 0.95rem; 
+      margin-top: 3rem; 
+      text-align: center; 
+    }
+    footer p { margin: 0.5rem 0; }
+
+    .small-logo { 
+      max-width: 220px; 
+      height: auto; 
+      margin: 0 auto 0.5rem; 
+      display: block; 
+    }
     h1 { font-size: 2.8rem; color: #0d6efd; margin: 0.3rem 0; }
     h2 { font-size: 1.8rem; color: #333; margin: 0.3rem 0 0.5rem; }
+
     .intro-text, .contact-info {
       max-width: 800px;
       margin: 1rem auto;
       text-align: left;
       font-size: 1.15rem;
     }
-    .contact-info ul {
-      list-style: disc;
-      padding-left: 1.5rem;
-      margin: 1rem 0;
-    }
+
     .buttons {
       display: flex;
       flex-wrap: wrap;
@@ -52,20 +95,60 @@
     .btn-call { background: #0d6efd; }
     .btn-call:hover { background: #0b5ed7; transform: translateY(-2px); }
     .btn-mail {
-      background: #6f42c1; /* paars/blauw tint */
+      background: #6f42c1;
     }
     .btn-mail:hover {
       background: #5a32a3;
       transform: translateY(-2px);
     }
-    form { max-width: 500px; margin: 1.5rem auto; text-align: left; }
-    label { display: block; margin: 0.8rem 0 0.3rem; font-weight: bold; }
-    input, textarea { width: 100%; padding: 0.9rem; margin-bottom: 0.8rem; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box; font-size: 1rem; }
-    button { background: #0d6efd; color: white; padding: 1rem; border: none; border-radius: 4px; cursor: pointer; font-size: 1.1rem; width: 100%; }
-    footer { background: #e9ecef; padding: 2rem; font-size: 0.95rem; margin-top: 3rem; }
+
+    /* === Verbeterde formulier styling (dit is wat ik bedoelde met "Aanbevolen CSS") === */
+    form { 
+      max-width: 500px; 
+      margin: 2rem auto; 
+      text-align: left; 
+    }
+    .form-group {
+      margin-bottom: 1.5rem;
+    }
+    label { 
+      display: block; 
+      margin-bottom: 0.4rem; 
+      font-weight: bold; 
+    }
+    .required {
+      color: #e74c3c;
+    }
+    input, select, textarea { 
+      width: 100%; 
+      padding: 0.9rem; 
+      border: 1px solid #ccc; 
+      border-radius: 4px; 
+      box-sizing: border-box; 
+      font-size: 1rem; 
+    }
+    input:focus, select:focus, textarea:focus {
+      border-color: #0d6efd;
+      outline: none;
+    }
+    button { 
+      background: #0d6efd; 
+      color: white; 
+      padding: 1rem; 
+      border: none; 
+      border-radius: 4px; 
+      cursor: pointer; 
+      font-size: 1.1rem; 
+      width: 100%; 
+      margin-top: 0.5rem;
+    }
+    button:hover {
+      background: #0b5ed7;
+    }
   </style>
 </head>
 <body>
+
 <nav>
   <ul>
     <li><a href="index.html">Home</a></li>
@@ -76,80 +159,105 @@
     <li><a href="contact.html">Contact</a></li>
   </ul>
 </nav>
+
 <header>
   <img src="Testonderkantbijgesneden50kleiner.png" alt="DigiThuis Betuwe" class="small-logo">
   <h1>Contact</h1>
   <p>Bel of app gerust – ik reageer snel!</p>
-  <!-- Contact & Afspraak maken -->
+
   <div class="intro-text">
     <h2>Contact & Afspraak maken</h2>
-    <p>Heeft u een vraag of wilt u direct een afspraak inplannen? Geen enkel probleem. Ik help u graag weer op weg met uw computer, tablet of telefoon. U kunt mij op verschillende manieren bereiken:</p>
+    <p>Heeft u een vraag of wilt u direct een afspraak inplannen? Geen enkel probleem. Ik help u graag weer op weg met uw computer, tablet of telefoon.</p>
+    
     <p><strong>Direct contact</strong></p>
-    <!-- Knoppen onder "Direct contact" -->
     <div class="buttons">
-      <a href="tel:+31644706404" class="btn btn-call">
-        Direct bellen
-      </a>
-      <a href="https://wa.me/31644706404?text=Hoi%20Steffen%2C%20ik%20wil%20graag%20een%20afspraak%20maken..." class="btn btn-whatsapp" target="_blank">
-        WhatsApp-bericht sturen
-      </a>
-      <a href="mailto:info@digithuisbetuwe.nl?subject=Hoi%20Steffen%2C%20ik%20wil%20graag%20contact" class="btn btn-mail">
-        Direct mailen
-      </a>
+      <a href="tel:+31644706404" class="btn btn-call">Direct bellen</a>
+      <a href="https://wa.me/31644706404?text=Hoi%20Steffen%2C%20ik%20wil%20graag%20een%20afspraak%20maken..." class="btn btn-whatsapp" target="_blank">WhatsApp-bericht sturen</a>
+      <a href="mailto:info@digithuisbetuwe.nl?subject=Hoi%20Steffen%2C%20ik%20wil%20graag%20contact" class="btn btn-mail">Direct mailen</a>
     </div>
+
+    <div class="content-box" style="margin-top: 2rem;">
+      <h3>Werkgebied DigiThuis Betuwe</h3>
+      <p>Vanuit Geldermalsen help ik u graag aan huis in de gehele regio.</p>
+      <div style="width: 100%; height: 400px; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2466.828628373229!2d5.234673877180425!3d51.84852928555819!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c6630000000001%3A0x0!2sZoete%20Kroon%206%2C%204191%20TV%20Geldermalsen!5e0!3m2!1snl!2snl!4v1710000000000!5m2!1snl!2snl" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+
     <ul>
-<div class="content-box" style="margin-top: 2rem;">
-  <h3>Werkgebied DigiThuis Betuwe</h3>
-  <p>Vanuit Geldermalsen help ik u graag aan huis in de gehele regio.</p>
-  <div style="width: 100%; height: 400px; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
-    <iframe 
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2466.828628373229!2d5.234673877180425!3d51.84852928555819!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c6630000000001%3A0x0!2sZoete%20Kroon%206%2C%204191%20TV%20Geldermalsen!5e0!3m2!1snl!2snl!4v1710000000000!5m2!1snl!2snl" 
-      width="100%" 
-      height="100%" 
-      style="border:0;" 
-      allowfullscreen="" 
-      loading="lazy" 
-      referrerpolicy="no-referrer-when-downgrade">
-    </iframe>
-  </div>
-</div>
       <li>Bent u aan het bellen en neem ik niet direct op? Dan ben ik waarschijnlijk iemand aan het helpen. Spreek gerust uw naam en telefoonnummer in, dan bel ik u zo snel mogelijk terug.</li>
     </ul>
   </div>
+
   <p style="font-size: 1.4rem; margin: 2rem 0 1rem;">Steffen Horvers – +31 6 44706404</p>
   <p>Zoete Kroon 6, Geldermalsen</p>
+
   <!-- Stuur een bericht -->
   <div class="intro-text" style="margin-top: 2rem;">
     <h2>Stuur een bericht</h2>
     <p>Vindt u het prettiger als ik contact met u opneem? Vul dan onderstaand formulier in. Ik reageer doorgaans binnen een werkdag.</p>
   </div>
-  <form action="https://formspree.io/f/xaqdggoe" method="POST">
-    <label for="naam">Uw naam</label>
-    <input id="naam" type="text" name="naam" required placeholder="uw volledige naam">
 
-    <label for="telefoon">Telefoonnummer</label>
-    <input id="telefoon" type="tel" name="telefoon" required placeholder="06-12345678">
+  <!-- === VERBETERD FORMULIER MET JOUW WERKZAAMHEDEN === -->
+  <form action="https://formspree.io/f/xaqdggoe" method="POST" id="contact-form">
+    
+    <input type="hidden" name="_next" value="https://digithuisbetuwe.nl/bedankt.html">
 
-    <label for="email">E-mailadres (optioneel)</label>
-    <input id="email" type="email" name="email" placeholder="uw@email.nl">
+    <div class="form-group">
+      <label for="naam">Uw naam <span class="required">*</span></label>
+      <input id="naam" type="text" name="naam" required placeholder="Uw volledige naam">
+    </div>
 
-    <label for="bericht">Waar kan ik u mee helpen?</label>
-    <textarea id="bericht" name="bericht" rows="6" required placeholder="Vertel me over uw vraag of probleem..."></textarea>
+    <div class="form-group">
+      <label for="telefoon">Telefoonnummer <span class="required">*</span></label>
+      <input id="telefoon" type="tel" name="telefoon" required placeholder="06-12345678">
+    </div>
 
-    <!-- Honeypot tegen spam (onzichtbaar voor mensen, bots vullen dit vaak in → Formspree blokkeert automatisch) -->
-    <input type="text" name="_gotcha" style="display:none" />
+    <div class="form-group">
+      <label for="email">E-mailadres (optioneel)</label>
+      <input id="email" type="email" name="email" placeholder="uw@email.nl">
+    </div>
 
-    <button type="submit">Verzend</button>
+    <div class="form-group">
+      <label for="dienst">Waar gaat het om? <span class="required">*</span></label>
+      <select id="dienst" name="dienst" required>
+        <option value="">Kies een onderwerp...</option>
+        <option value="WiFi & Internet">WiFi & Internet: Overal in huis een goede verbinding en haperingen oplossen</option>
+        <option value="Printer & Randapparatuur">Printer & Randapparatuur: Installeren, aansluiten en weer probleemloos laten printen</option>
+        <option value="Nieuwe Computer of Laptop">Nieuwe Computer of Laptop: Gebruiksklaar maken en oude bestanden overzetten</option>
+        <option value="Telefoon & Tablet">Telefoon & Tablet: Overstap naar een nieuw toestel en uitleg over apps</option>
+        <option value="Opschonen & Versnellen">Opschonen & Versnellen: Trage computer weer vlot maken</option>
+        <option value="DigiD & Bankieren">DigiD & Bankieren: Veilig inloggen en bank-apps installeren</option>
+        <option value="Veiligheid & Opslag">Veiligheid & Opslag: Foto’s en documenten veilig bewaren of terughalen</option>
+        <option value="Beeld & Geluid">Beeld & Geluid: TV, geluidssysteem of Chromecast instellen (ook in caravan)</option>
+        <option value="Huisbeveiliging">Huisbeveiliging: Camera's of slimme deurbel installeren</option>
+        <option value="Smart Home & WiFi Hulp">Smart Home & WiFi Hulp: Robotstofzuiger, lampen, Google Home koppelen</option>
+        <option value="Uitleg Programma’s">Uitleg Programma’s: Ondersteuning bij Word, Excel of PowerPoint</option>
+        <option value="Anders">Anders (beschrijf hieronder)</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="bericht">Vertel me over uw vraag of probleem <span class="required">*</span></label>
+      <textarea id="bericht" name="bericht" rows="6" required placeholder="Bijvoorbeeld: Mijn printer print niet meer na de update..."></textarea>
+    </div>
+
+    <!-- Honeypot tegen spam -->
+    <input type="text" name="_gotcha" style="display:none;" aria-hidden="true">
+    <!-- Optioneel: redirect naar een eigen bedankpagina (maak een thanks.html aan) -->
+    <input type="hidden" name="_redirect" value="https://digithuisbetuwe.nl/bedankt.html">
+    <button type="submit">Verzend bericht</button>
   </form>
 </header>
+
 <footer>
   <p>© 2026 DigiThuis Betuwe – Rustige hulp bij u thuis in de Betuwe</p>
   <p>Steffen Horvers – 06 - 44 70 64 04</p>
   <p style="font-size: 0.85rem; margin-top: 0.5rem;">
-    <a href="algemene-voorwaarden.html" style="color: #333; text-decoration: none;">Algemene Voorwaarden</a> | 
+    <a href="algemene-voorwaarden.html" style="color: #333; text-decoration: none;">Algemene Voorwaarden</a> |
     <a href="privacyverklaring.html" style="color: #333; text-decoration: none;">Privacyverklaring</a>
   </p>
 </footer>
+
 </body>
 </html>
-
