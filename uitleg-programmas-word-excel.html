@@ -9,20 +9,38 @@
   <link rel="icon" type="image/png" href="logobijgesneden.png">
   
   <style>
-    /* Zelfde styling als hierboven */
+    /* === Geünificeerde stijlen van DigiThuis Betuwe === */
     body { font-family: Arial, sans-serif; margin: 0; background: #f8f9fa; color: #333; line-height: 1.7; font-size: 1.15rem; }
     nav { background: #0d6efd; color: white; position: fixed; width: 100%; top: 0; z-index: 1000; box-shadow: 0 2px 10px rgba(0,0,0,0.15); }
     nav ul { list-style: none; margin: 0; padding: 0.8rem; display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap; }
     nav a { color: white; text-decoration: none; font-weight: bold; font-size: clamp(1rem, 4vw, 1.1rem); }
     nav a:hover { text-decoration: underline; }
-    header { background: #f8f9fa; padding: 5rem 1rem 2rem; text-align: center; }
-    .content { max-width: 800px; margin: 0 auto; text-align: left; padding: 0 1rem; }
-    .service-photo { width: 100%; max-width: 400px; height: auto; border-radius: 8px; margin: 1.5rem 0; display: block; }
-    .buttons { display: flex; gap: 1rem; flex-wrap: wrap; margin-top: 2rem; }
-    .btn { padding: 1rem 2rem; border-radius: 50px; text-decoration: none; font-weight: bold; text-align: center; flex: 1; min-width: 200px; }
-    .btn-call { background: #0d6efd; color: white; }
-    .btn-wa { background: #25D366; color: white; }
-    footer { background: #e9ecef; padding: 2rem; text-align: center; margin-top: 3rem; font-size: 0.95rem; }
+    header { background: #f8f9fa; padding: 5rem 1rem 2.5rem; text-align: center; }
+    
+    h1 { font-size: 2.2rem; color: #0d6efd; margin: 0.3rem 0; }
+    h2 { font-size: 1.8rem; color: #333; margin: 1.5rem 0 1rem; }
+    
+    .content { max-width: 800px; margin: 1rem auto; text-align: left; padding: 0 1rem; }
+    
+    /* Gecentreerde foto styling */
+    .service-photo { 
+      max-width: 100%; 
+      height: auto;    
+      display: block;  
+      margin: 1.5rem auto; 
+      border-radius: 8px; 
+      box-shadow: 0 4px 15px rgba(0,0,0,0.15); 
+    }
+    
+    .buttons { display: flex; flex-wrap: wrap; justify-content: center; gap: 1.5rem; margin: 1.5rem 0; }
+    .btn { display: inline-block; color: white; padding: 1rem 2.5rem; border-radius: 50px; text-decoration: none; font-weight: bold; font-size: 1.2rem; box-shadow: 0 4px 10px rgba(0,0,0,0.15); transition: all 0.3s; }
+    .btn-wa { background: #25D366; }
+    .btn-wa:hover { background: #20b858; transform: translateY(-2px); }
+    .btn-call { background: #0d6efd; }
+    .btn-call:hover { background: #0b5ed7; transform: translateY(-2px); }
+    
+    footer { background: #e9ecef; padding: 2rem; font-size: 0.95rem; margin-top: 3rem; text-align: center; }
+    footer a { color: #0d6efd; text-decoration: none; font-weight: bold; }
   </style>
 </head>
 <body>
@@ -43,7 +61,7 @@
   <div class="content">
     <p>Wilt u een brief schrijven in Word, een overzicht maken in Excel of foto's laten zien in PowerPoint, maar weet u niet precies hoe het werkt? Ik kom bij u langs voor persoonlijke uitleg, gewoon aan uw eigen keukentafel.</p>
 
-    <img src="hulp-bij-nieuwe-telefoon-overzetten.jpg" alt="Steffen van DigiThuis geeft rustige uitleg over het gebruik van Word en Excel" class="service-photo">
+    <img src="hulp-bij-nieuwe-telefoon-overzetten.jpg" width="350" alt="Steffen van DigiThuis geeft rustige uitleg over het gebruik van Word en Excel" class="service-photo">
 
     <h2>Wat ik voor u kan doen:</h2>
     <ul>
@@ -57,16 +75,21 @@
       <a href="tel:+31644706404" class="btn btn-call">Direct bellen</a>
       <a href="https://wa.me/31644706404?text=Hoi%20Steffen%2C%20ik%20heb%20hulp%20nodig%20bij%20het%20leren%20werken%20met%20Word/Excel..." class="btn btn-wa" target="_blank">WhatsApp bericht</a>
     </div>
+
+    <p style="text-align: center; margin-top: 2rem;">Werkzaam in: <strong>Geldermalsen, Meteren, Tricht, Tiel, Culemborg, Beesd, Buren</strong> en omstreken.</p>
   </div>
 </header>
 
 <footer>
-  <p>© 2026 DigiThuis Betuwe – Rustige hulp bij jou thuis in de Betuwe</p>
-  <p>Steffen Horvers – +31 6 44706404</p>
+  <p>Volg DigiThuis voor digitale tips: 
+    <a href="https://www.facebook.com/share/1CJiqSXW3B/?mibextid=wwXIfr" target="_blank">Facebook</a>
+  </p>
+  <p>© 2026 DigiThuis Betuwe – Steffen Horvers – Geldermalsen - Rustige hulp bij u thuis in de Betuwe</p>
   <p style="font-size: 0.85rem; margin-top: 0.5rem;">
-    <a href="algemene-voorwaarden.html">Algemene Voorwaarden</a> | 
-    <a href="privacyverklaring.html">Privacyverklaring</a>
+    <a href="algemene-voorwaarden.html" style="color: #333;">Algemene Voorwaarden</a> | 
+    <a href="privacyverklaring.html" style="color: #333;">Privacyverklaring</a>
   </p>
 </footer>
+
 </body>
 </html>
