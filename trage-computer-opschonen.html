@@ -9,29 +9,38 @@
   <link rel="icon" type="image/png" href="logobijgesneden.png">
   
   <style>
+    /* === Geünificeerde stijlen van DigiThuis Betuwe === */
     body { font-family: Arial, sans-serif; margin: 0; background: #f8f9fa; color: #333; line-height: 1.7; font-size: 1.15rem; }
     nav { background: #0d6efd; color: white; position: fixed; width: 100%; top: 0; z-index: 1000; box-shadow: 0 2px 10px rgba(0,0,0,0.15); }
     nav ul { list-style: none; margin: 0; padding: 0.8rem; display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap; }
     nav a { color: white; text-decoration: none; font-weight: bold; font-size: clamp(1rem, 4vw, 1.1rem); }
     nav a:hover { text-decoration: underline; }
     header { background: #f8f9fa; padding: 5rem 1rem 2.5rem; text-align: center; }
-    .small-logo { max-width: 220px; height: auto; margin: 0 auto 0.5rem; display: block; }
-    h1 { font-size: 2.8rem; color: #0d6efd; margin: 0.3rem 0; }
-    h2 { font-size: 1.8rem; color: #333; margin: 0.3rem 0 1rem; }
-    .content {
-      max-width: 800px;
-      margin: 1rem auto;
-      text-align: left;
-      padding: 0 1rem;
+    
+    h1 { font-size: 2.2rem; color: #0d6efd; margin: 0.3rem 0; }
+    h2 { font-size: 1.8rem; color: #333; margin: 1.5rem 0 1rem; }
+    
+    .content { max-width: 800px; margin: 1rem auto; text-align: left; padding: 0 1rem; }
+    
+    /* Gecentreerde foto styling */
+    .service-photo { 
+      max-width: 100%; 
+      height: auto;    
+      display: block;  
+      margin: 1.5rem auto; 
+      border-radius: 8px; 
+      box-shadow: 0 4px 15px rgba(0,0,0,0.15); 
     }
+    
     .buttons { display: flex; flex-wrap: wrap; justify-content: center; gap: 1.5rem; margin: 1.5rem 0; }
     .btn { display: inline-block; color: white; padding: 1rem 2.5rem; border-radius: 50px; text-decoration: none; font-weight: bold; font-size: 1.2rem; box-shadow: 0 4px 10px rgba(0,0,0,0.15); transition: all 0.3s; }
     .btn-whatsapp { background: #25D366; }
     .btn-whatsapp:hover { background: #20b858; transform: translateY(-2px); }
     .btn-call { background: #0d6efd; }
     .btn-call:hover { background: #0b5ed7; transform: translateY(-2px); }
-    .service-photo { max-width: 400px; height: auto; margin: 1.5rem auto; display: block; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.15); }
-    footer { background: #e9ecef; padding: 2rem; font-size: 0.95rem; margin-top: 3rem; }
+    
+    footer { background: #e9ecef; padding: 2rem; font-size: 0.95rem; margin-top: 3rem; text-align: center; }
+    footer a { color: #0d6efd; text-decoration: none; font-weight: bold; }
   </style>
 </head>
 <body>
@@ -47,13 +56,12 @@
 </nav>
 
 <header>
-  <img src="Testonderkantbijgesneden50kleiner.png" alt="DigiThuis Betuwe" class="small-logo">
   <h1>Trage computer opschonen en versnellen</h1>
 
   <div class="content">
     <p>Trage computer? Hij start langzaam op of loopt vast? Ik maak hem weer snel door opschonen, updates en optimalisatie, zonder data te verliezen.</p>
 
-    <img src="trage-laptop-sneller-maken-geldermalsen.jpg" alt="Computerhulp Steffen Horvers schoont een trage laptop op voor een snellere computer" class="service-photo">
+    <img src="trage-laptop-sneller-maken-geldermalsen.jpg" width="350" alt="Computerhulp Steffen Horvers schoont een trage laptop op voor een snellere computer" class="service-photo">
 
     <h2>Wat ik voor u doe:</h2>
     <ul>
@@ -62,7 +70,6 @@
       <li>Tips geven om uw computer in de toekomst snel te houden</li>
     </ul>
 
-    <!-- CTA-knoppen -->
     <div class="buttons">
       <a href="tel:+31644706404" class="btn btn-call">Direct bellen</a>
       <a href="https://wa.me/31644706404?text=Hoi%20Steffen%20ik%20heb%20hulp%20nodig%20bij%20mijn%20trage%20computer" class="btn btn-whatsapp" target="_blank">WhatsApp sturen</a>
@@ -70,18 +77,19 @@
 
     <p>Heeft u ook problemen met uw internet? <a href="wifi-problemen-oplossen.html">Bekijk mijn WiFi-hulp pagina</a>.</p>
 
-    <p>Ik kom onder andere langs in: Geldermalsen, Meteren, Tricht, Tiel, Culemborg, Beesd, Buren en omstreken.</p>
+    <p style="text-align: center; margin-top: 2rem;">Werkzaam in: <strong>Geldermalsen, Meteren, Tricht, Tiel, Culemborg, Beesd, Buren</strong> en omstreken.</p>
   </div>
 </header>
 
 <footer>
-  <p>© 2026 DigiThuis Betuwe – Rustige hulp bij jou thuis in de Betuwe</p>
-  <p>Steffen Horvers – +31 6 44706404</p>
+  <p>Volg DigiThuis voor digitale tips: 
+    <a href="https://www.facebook.com/share/1CJiqSXW3B/?mibextid=wwXIfr" target="_blank">Facebook</a>
+  </p>
+  <p>© 2026 DigiThuis Betuwe – Steffen Horvers – Geldermalsen - Rustige hulp bij u thuis in de Betuwe</p>
   <p style="font-size: 0.85rem; margin-top: 0.5rem;">
-    <a href="algemene-voorwaarden.html">Algemene Voorwaarden</a> | 
-    <a href="privacyverklaring.html">Privacyverklaring</a>
+    <a href="algemene-voorwaarden.html" style="color: #333;">Algemene Voorwaarden</a> | 
+    <a href="privacyverklaring.html" style="color: #333;">Privacyverklaring</a>
   </p>
 </footer>
 </body>
-
 </html>
